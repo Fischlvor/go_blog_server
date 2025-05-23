@@ -1,0 +1,92 @@
+captcha:
+  height: 80
+  width: 240
+  length: 6
+  max_skew: 0.7
+  dot_count: 80
+email:
+  host: smtp.qq.com
+  port: 465
+  from: 765951105@qq.com
+  nickname: admin
+  secret: aevxkkeavrwkbgag
+  is_ssl: true
+es:
+  url: http://8.148.64.96:9200
+  username: ""
+  password: ""
+  is_console_print: true
+gaode:
+  enable: true
+  key: 0224f1162e39cdc6579a7d4b35e60bc1
+jwt:
+  access_token_secret: bWEbRGTGst__BuDqRF8vKPFghXrL4l1BtBvQaycTV5I=
+  refresh_token_secret: QIqD3gGdC1vdum3B9KN2d4bIHM4lH6_CrH12IEZUJX8=
+  access_token_expiry_time: 2h
+  refresh_token_expiry_time: 7d
+  issuer: go_blog
+mysql:
+  host: 8.148.64.96
+  port: 13306
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db_name: blog_db
+  username: root
+  password: zJ0_jE6e,mSYLYYx
+  max_idle_conns: 10
+  max_open_conns: 100
+  log_mode: info
+qiniu:
+  zone: z0
+  bucket: xxx
+  img_path: https://xxx.xxx/
+  access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  secret_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  use_https: true
+  use_cdn_domains: true
+qq:
+  enable: false
+  app_id: "102785979"
+  app_key: Y8Yr22rUwAAwWsyq
+  redirect_uri: http://8.148.64.96:8081/login?flag=qq
+redis:
+  address: 8.148.64.96:16379
+  password: ""
+  db: 0
+system:
+  host: 0.0.0.0
+  port: 8081
+  env: release
+  router_prefix: api
+  use_multipoint: true
+  sessions_secret: 8z6XBf4P-tuXs5FhTS7o4dW4QuFY65DLW399Hbubghk=
+  oss_type: local
+upload:
+  size: 20
+  path: uploads
+website:
+  logo: ""
+  full_logo: ""
+  title: Kiana Kaslana 的个人博客
+  slogan: 午睡橘猫
+  slogan_en: Kumquat the Slumber
+  description: 学习交流
+  version: 1.0.0
+  created_at: "2025-05-01"
+  icp_filing: 崩icp备2025054230号-1
+  public_security_filing: 崩逐火之蛾备00000000000000号
+  bilibili_url: https://space.bilibili.com/348517345
+  github_url: https://github.com/Fischlvor
+  steam_url: https://steamcommunity.com/profiles/76561198952763172/
+  name: Kiana
+  job: 研究牲
+  address: 圣芙蕾雅学院
+  email: 765951105@qq.com
+  qq_image: ""
+  wechat_image: ""
+zap:
+  level: info
+  filename: log/go_blog.log
+  max_size: 200
+  max_backups: 30
+  max_age: 5
+  is_console_print: true
